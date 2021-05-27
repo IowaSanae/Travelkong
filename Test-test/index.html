@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Employee Manager</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar_icon" onclick="toggleSidebar()">
+          <i class="fa fa-bars"></i>
+        </div>
+
+        <div class="navbar__right">
+          <a href="#">
+            <i class="fa fa-search"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-clock-o"></i>
+          </a>
+          <a href="#">
+            <img width="30" src="./img/avatar.svg" alt="avatar" />
+          </a>
+        </div>
+      </nav>
+      <main>
+        <div class="main__container">
+          <div class="main__title">
+            <img src="./img/play_prism_hlock_2x.png" alt="" />
+            <div class="main__greeting">
+              <h1>Hello</h1>
+              <p>Welcome to the store</p>
+            </div>
+          </div>
+
+          <h2 class="category">Game</h2>
+          <div class="main__cards">
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="category">Movies</h2>
+          <div class="main__cards">
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="category">Game</h2>
+          <div class="main__cards">
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="category">Book</h2>
+          <div class="main__cards">
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/unnamed.webp" alt="" class="img-app" />
+              <div class="card__inner">
+                <p class="text-primary-p">LMHT</p>
+                <span class="font-bold text-title">Riot</span>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="charts">
+            <div class="charts__left">
+              <div class="charts__left__title">
+                <div>
+                  <h1>Top app today</h1>
+                  <p>District 7 , Ho Chi Minh city , VN</p>
+                </div>
+                <i class="fa fa-arrow-down"></i>
+              </div>
+              <div id="apex1"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div id="sidebar">
+        <div class="sidebar__title">
+          <div class="sidebar__img">
+            <img
+              src="./img/marjan-blan-marjanblan--T-9-x7ypCI-unsplash.jpg"
+              alt="logo"
+              class="user-logo"
+            />
+            <h1>Saikou</h1>
+          </div>
+          <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
+        </div>
+        <div class="sidebar__menu">
+          <div class="sidebar__link active_menu_link">
+            <i class="fa fa-home"></i>
+            <a href="#">Dashboard</a>
+          </div>
+          <h2>MNG</h2>
+          <div class="sidebar__link">
+            <i class="fa fa-user-secret"></i>
+            <a href="#">Giải trí</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-gamepad"></i>
+            <a href="#">Game</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-film"></i>
+            <a href="#">Movies</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-book"></i>
+            <a href="#">Book</a>
+          </div>
+
+          <div class="sidebar__link">
+            <i class="fa fa-handshake-o"></i>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-question"></i>
+            <a href="#">Request</a>
+          </div>
+
+          <h2>PAYMENT</h2>
+          <div class="sidebar__link">
+            <i class="fa fa-sliders"></i>
+            <a href="#">Setting</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-money"></i>
+            <a href="#">Payroll</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-sign-out"></i>
+            <a href="#">Paygrades</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-sign-out"></i>
+            <a href="#">Log Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script> -->
+    <!--Apex Chart-->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/charts.js"></script>
+  </body>
+</html>
