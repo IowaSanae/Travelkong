@@ -1,8 +1,11 @@
-@import url(//db.onlinewebfonts.com/c/204df41caea46cc1bdecab1b4cf793c0?family=Timeless);
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@font-face {
+    font-family: 'Timeless';
+    src: url('./assests/fonts/Timeless.ttf') format('truetype');
+}
 .container-header {
     background-color: #f7f7f7;
-    font-family: 'Timeless';
+    font-family: 'Lato', sans-serif;
     font-weight: normal;
     text-align: center;
     padding: 40px;
@@ -36,4 +39,12 @@
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 18px;
+}
+
+.company-name {
+    font-family: 'Timeless', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 46px;
+    padding-bottom: 25px;
 }
