@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -29,33 +29,25 @@
 
 <body>
     <main>
+        <!-- Credits to https://getbootstrap.com/docs/4.0/components/navbar/ -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.php">Travelkong</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.php">Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./about.php">Về chúng tôi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./contact.php">Liên hệ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./blog.php">Bài viết</a>
-                        </li>
-                    </ul>
+            <a class="navbar-brand" href="./index.php">Travelkong</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" id="homepage" href="./index.php">Trang chủ <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" id="about" href="./about.php">Về chúng tôi</a>
+                    <a class="nav-item nav-link active" id="contact" href="./contact.php">Liên hệ</a>
+                    <a class="nav-item nav-link active" id="blog" href="./blog.php">Bài viết</a>
                 </div>
             </div>
         </nav>
 
         <h2 class="company-name">Travelkong</h2>
 
+        <!-- Credits to https://getbootstrap.com/docs/4.0/components/carousel/ -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -84,22 +76,19 @@
         </div>
 
         <!-- Credits to https://webdamn.com/build-newsletter-system-with-php-and-mysql/ -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="container mt-5">
-                    <div class="top">
-                        <h2 class="font-weight-bold text-center mt-4">Bạn muốn nhận thông báo khi có bài viết mới?</h2>
-                        <h3 class="font-weight-bold text-center mt-4">Hãy nhập tên và email để đăng ký!</h3>
-                    </div>
-                    <div class="content mt-5 mx-auto">
-                        <form action="./action_page.php" id="subscribeForm" method="post">
-                            <input class="input" type="text" class="form-control" id="name" placeholder="Họ tên" required="">
-                            <span class="text-danger hidden" id="nameError"></span><br>
-                            <input class="input" type="email" class="form-control" id="email" placeholder="Email" required="">
-                            <span class="text-danger hidden" id="emailError"></span><br><br>
-                            <input type="button" class="button" id="subscribe" value="Gửi">
-                        </form>
-                    </div>
+        <div class="footop-newsletter">
+            <div class="container">
+                <div class="footop-title">
+                    <h2>Bạn muốn nhận thông báo khi có bài viết mới?</h2>
+                    <h3>Hãy nhập email để đăng ký!</h3>
+                </div>
+                <div class="bottom">
+                    <div class="status"></div>
+                    <form action="./action_page.php" id="subscribeForm" method="post">
+                        <input class="input" type="email" id="email" placeholder="Email" required="">
+                        <span class="text-danger hidden" id="emailError"></span><br><br>
+                        <input type="submit" class="button btn btn-dark" id="subscribe" value="Gửi">
+                    </form>
                 </div>
             </div>
         </div>
