@@ -32,6 +32,7 @@
     text-align: center;
     font-size: 18px;
     padding-top: 10px;
+    background-color: #f7f7f7;
 }
 
 .company-name {
@@ -46,27 +47,52 @@
     font-family: 'Times New Roman', sans-serif;
     padding: 50px 400px 50px 400px;
     text-align: center;
+    border: 1px solid #111111;
 }
 
-.copyright {
-    background-color: #f7f7f7;
+.content {
+    width: 100%;
+    position: relative;
 }
 
-input[type="text"] {
+.row {
+    font-family: 'Times New Roman', sans-serif;
+    padding: 50px 400px 50px 400px;
+    text-align: center;
+}
+
+:focus {
+    outline: none;
+}
+
+.input {
+    width: 650px;
     border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 2px solid black;
-    font-size: 18px;
+    padding: 10px 10px;
+    border-bottom: 1px solid #929fba;
 }
 
-input[type="email"] {
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 2px solid black;
-    font-size: 18px;
+.input ~ .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
 }
+
+.input:focus ~ .border {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container {
+    border: 0.5px solid;
+    padding-bottom: 40px;
+}
+
+.border {
+      border: 1px solid #4285F4!important;
+  }
 
 .button {
     background-color: #000000;

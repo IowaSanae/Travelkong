@@ -82,22 +82,19 @@
         <!-- Credits to https://webdamn.com/build-newsletter-system-with-php-and-mysql/ -->
         <div class="row">
             <div class="col-lg-12">
-                <div class="main-content">
-                    <div class="susbcribe-container">
-                        <div class="top">
-                            <h2 style="text-align: center">Bạn muốn nhận thông báo khi có bài viết mới?</h2>
-                            <h3 style="text-align: center">Hãy nhập tên và email để đăng ký!</h3>
-                        </div>
-                        <div class="bottom">
-                            <div class="status"></div>
-                            <form action="./action_page.php" id="subscribeForm" method="post">
-                                <input type="text" class="form-control" id="name" placeholder="Họ tên" required="">
-                                <span class="text-danger hidden" id="nameError"></span><br>
-                                <input type="email" class="form-control" id="email" placeholder="Email" required="">
-                                <span class="text-danger hidden" id="emailError"></span><br><br>
-                                <input type="button" class="button" id="subscribe" value="Gửi">
-                            </form>
-                        </div>
+                <div class="container mt-5">
+                    <div class="top">
+                        <h2 class="font-weight-bold text-center mt-4">Bạn muốn nhận thông báo khi có bài viết mới?</h2>
+                        <h3 class="font-weight-bold text-center mt-4">Hãy nhập tên và email để đăng ký!</h3>
+                    </div>
+                    <div class="content mt-5 mx-auto">
+                        <form action="./action_page.php" id="subscribeForm" method="post">
+                            <input class="input" type="text" class="form-control" id="name" placeholder="Họ tên" required="">
+                            <span class="text-danger hidden" id="nameError"></span><br>
+                            <input class="input" type="email" class="form-control" id="email" placeholder="Email" required="">
+                            <span class="text-danger hidden" id="emailError"></span><br><br>
+                            <input type="button" class="button" id="subscribe" value="Gửi">
+                        </form>
                     </div>
                 </div>
             </div>
