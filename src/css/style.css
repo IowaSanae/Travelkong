@@ -1,30 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 @font-face {
     font-family: 'Timeless';
-    src: url('./assests/fonts/Timeless.ttf') format('truetype');
+    src: url('../../assests/fonts/Timeless.ttf') format('truetype');
 }
 .container-header {
     background-color: #f7f7f7;
     font-family: 'Lato', sans-serif;
     font-weight: normal;
-    text-align: center;
-    padding: 40px;
 }
 
 .navbar-brand {
     font-size: 25px;
+    padding-left: 20px;
 }
 
 #navbarNavDropdown {
-    text-align: justify;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     margin-left: 450px;
     font-size: 18px;
-}
-
-.navbar-nav {
-    text-align: justify;
-    font-family:'Times New Roman', Times, serif;
 }
 
 .body-welcome {
@@ -35,10 +28,10 @@
 }
 
 .copyright {
-    padding-top: 10px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 18px;
+    padding-top: 10px;
 }
 
 .company-name {
@@ -47,4 +40,38 @@
     text-align: center;
     font-size: 46px;
     padding: 25px;
+}
+
+.row {
+    font-family: 'Times New Roman', sans-serif;
+    padding: 50px 400px 50px 400px;
+    text-align: center;
+}
+
+.copyright {
+    background-color: #f7f7f7;
+}
+
+input[type="text"] {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+}
+
+input[type="email"] {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+}
+
+.button {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+    width: 680px;
+    font-size: 18px;
 }
