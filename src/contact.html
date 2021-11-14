@@ -1,33 +1,3 @@
-<?php
-session_start();
-require('db.php');
-
-if (isset($_POST['username'])) {
-    // stripslashes dùng để loại bỏ dấu "\"
-    $fullname = stripslashes($_REQUEST['fullname']);
-    // mysqli_real_escape_string dùng để loại bỏ ký tự đặc biệt
-    $fullname = mysqli_real_escape_string($mysqli, $username);
-    $email = stripslashes($_REQUEST['email']);
-    $email =  mysqli_real_escape_string($mysqli, $email);
-    $message = stripslashes($_REQUEST['message']);
-    $message = mysqli_real_escape_string($mysqli, $message);
-    $insert = "INSERT INTO register (Fullname, Email, Message) VALUES ('$fullname', '$email', '$message')";
-    $check_email = mysqli_query($mysqli, "SELECT * FROM register WHERE Email = '$email'");
-    if (mysqli_num_rows($check_email) >= 1) {
-        echo ("Email này đã được đăng ký");
-        header("Refresh: 2");
-    } else {
-        $final = mysqli_query($mysqli, $insert);
-        if ($final) {
-            echo '<div id="form-message-success">' . "Tin nhắn của bạn đã được gửi!" . '</div>';
-        } else {
-            echo ("Có lỗi xảy ra: " . $insert);
-        }
-    }
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
