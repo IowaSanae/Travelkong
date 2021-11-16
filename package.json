@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/IowaSanae/Travelkong/issues"
   },
-  "homepage": "https://github.com/IowaSanae/Travelkong#readme"
+  "homepage": "https://github.com/IowaSanae/Travelkong#readme",
+  "dependencies": {
+    "mongoose": "^6.0.13",
+    "validator": "^13.7.0"
+  }
 }
